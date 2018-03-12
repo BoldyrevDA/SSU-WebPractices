@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-Practices</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #navbar {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            height: 45px;
+            background-color: #666;
+            padding-left: 25px;
+            min-width: 470px;
+        }
+
+        #navbar li {
+            position: relative;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #navbar li a {
+            display: block;
+            padding: 5px;
+            width: 100px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #navbar li:hover {
+            background-color: #f90;
+        }
+
+        .active {
+            background-color: #444;
+            /*            border: #000 1px solid;*/
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+
+        iframe {
+            box-sizing: border-box;
+            width: 100%;
+            /* border: #004 4px solid; */
+            height: -webkit-calc(100vh - 45px);
+            height: calc(100vh - 45px);
+
+    </style>
+</head>
+
+<body>
+    <ul id="navbar">
+        <li class="active" onclick="handleClickItem(event)"><a href="1) HTML. Tables/index.html">HTML. Tables</a></li>
+        <li onclick="handleClickItem(event)"><a href="2) CSS. Styles/PageExample.html">CSS. Styles</a></li>
+        <li onclick="handleClickItem(event)"><a href="3) CSS. Responsive/PageExample.html">CSS. Responsive</a></li>
+        <li onclick="handleClickItem(event)"><a href="4) Bootstrap/PageExample.html">Bootstrap</a></li>
+        <li onclick="handleClickItem(event)"><a href="5) Javascript/PageExample.html">Javascript</a></li>
+        <li onclick="handleClickItem(event)"><a href="6) Ajax and JQuery/index.html">Ajax and JQuery</a></li>
+    </ul>
+    <iframe id="frame" src="1) HTML. Tables/index.html" align="left">
+    Ваш браузер не поддерживает плавающие фреймы!
+    </iframe>
+    
+    <script type="text/javascript">
+        let iframe = document.getElementById("frame");
+        iframe.src = "1) HTML. Tables/index.html";
+
+        let navbar = document.getElementById("navbar");
+        let items = navbar.getElementsByTagName("li");
+
+        function handleClickItem(e) {
+            e.preventDefault();
+            if (e.currentTarget.classList.contains('active')) {
+                return false;
+            }
+
+            if ((e.currentTarget == items[0]))
+                iframe.src = "1) HTML. Tables/index.html";
+            else if (e.currentTarget == items[1])
+                iframe.src = "2) CSS. Styles/PageExample.html";
+            else if (e.currentTarget == items[2])
+                iframe.src = "3) CSS. Responsive/PageExample.html";
+            else if (e.currentTarget == items[3])
+                iframe.src = "4) Bootstrap/PageExample.html";
+            else if (e.currentTarget == items[4])
+                iframe.src = "5) Javascript/PageExample.html";
+            else if (e.currentTarget == items[5])
+                iframe.src = "6) Ajax and JQuery/index.html";
+
+            for (let i = 0; i < items.length; i++) {
+                if (e.currentTarget == items[i]) {
+                    items[i].classList.add('active');
+                } else items[i].classList.remove('active');
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

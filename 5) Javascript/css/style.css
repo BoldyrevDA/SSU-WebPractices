@@ -1,0 +1,23 @@
+body{
+        background-color: #F0F8FF;
+        width: 700px;
+        margin: 0 auto;
+      }
+      #IDdate{
+        width: 100%;
+      }
+      #IDdate > input {
+        width: 15%;
+      }
+      #IDdate > select {
+        width: 15%;
+      }
+
+p{
+    margin: 5px 0px;
+}
+
+#btnLang{
+    margin-top: 10px;
+    float: right;
+}

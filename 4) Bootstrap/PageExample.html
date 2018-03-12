@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestPage. Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <style type="text/css">
+
+    	.indent-top {
+   			 margin-top: 30px;
+		}
+
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="btn navbar-toggle" data-toggle="collapse" data-target="#btn-admin"></button>
+          <a class="navbar-brand" href="#">Control Panel</a>
+        </div>
+      
+        <div class="collapse navbar-collapse pull-right " id="btn-admin">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"  ><i class="glyphicon glyphicon-user"></i> Admin</a>
+             <ul class="dropdown-menu">
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-lock"></i>Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    
+    <div class="container center-block">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3><span class="glyphicon glyphicon-briefcase"></span> Toolbox</h3>
+          <hr>
+          <ul class="nav">
+                <li><a href="#"><span class="glyphicon glyphicon-flash"></span> Alerts</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-link"></span> Links</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Reports</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-book"></span> Books</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Tools</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-time"></span> Real-time</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Advanced..</a></li>
+                <li class="divider"></li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="col-sm-9">
+        	<h3><span class="glyphicon glyphicon-dashboard"></span> Dashboard</h3>
+        	<hr>
+        	<div class="well">Inbox Messages<i class="badge pull-right">3</i></div>
+        	<hr class="indent-top">
+        	<div class="panel panel-default">
+ 				     <div class="panel-heading"><h4>Processing Status</h4></div>
+ 				         <div class="panel-body">
+ 					          <span>Complete</span>
+ 					        <div class="progress">
+  						        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+ 					 	          </div>
+					       </div>
+					       <span>In Progress</span>
+ 					       <div class="progress">
+  						      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+ 					 	        </div>
+					       </div>
+					       <span>At Risk</span>
+ 					       <div class="progress">
+  						        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+ 					      	    </div>
+					       </div>
+ 				       </div>
+			    </div>
+        </div>
+      </div>
+      <hr class="indent-top">
+      	<h4 class="text-info"><span class="glyphicon glyphicon-list-alt"></span> Reports</h4>
+      	<hr>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Visits</th>
+                        <th>ROI</th>
+                        <th>Sourse</th>
+                        <th>Description and Notes</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>45</td>
+                        <td>2.45%</td>
+                        <td>Direct</td>
+                        <td>
+                            In leo metus, fringilla at sapien quis, hendrerit sagittis elit. Nunc id ligula enim.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>289</td>
+                        <td>56.2%</td>
+                        <td>Refferal</td>
+                        <td>
+                            Curabitur dictum nisi arcu, sed lacinia nunc consectetur quis.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>98</td>
+                        <td>25%</td>
+                        <td>Type</td>
+                        <td>
+                            Maecenas sodales, magna a pulvinar consequat, nibh tellus ullamcorper ex,
+                            eu vestibulum lectus quam eget dui.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>109</td>
+                        <td>8%</td>
+                        <td></td>
+                        <td>
+                            Maecenas egestas dapibus ligula, in congue orci.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>14%</td>
+                        <td></td>
+                        <td>Etiam vel dui orci. Fusce consequat ante sed neque sollicitudin posuere.</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>New Requests</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">Hosting virtual mailbox serv..</li>
+                            <li class="list-group-item">Dedicated server doesn't..</li>
+                            <li class="list-group-item">RHEL6 install on new..</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="alert alert-info alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Please remember to <a href="#">Logout</a> for classified security
+                </div>
+                <hr>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Sumbit Request<span class="glyphicon glyphicon-wrench pull-right"></span></h4>
+                    </div>
+                    <div class="panel-body">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                  <label for="NameText">Name</label>
+                                  <input type="text" class="form-control" id="NameText" placeholder="Enter Name"
+                                           name="name">
+                            </div>
+                            <div class="form-group">
+                                  <label for="passwordID">Title</label>
+                                  <input type="password" class="form-control" id="passwordID" placeholder="Password"
+                                           name="password">
+                            </div>
+                            <div class="form-group">
+                                  <label for="textID">Details</label>
+                                  <textarea rows class="form-control" id="textID"
+                                              name="text" style="resize: vertical"></textarea>
+                            </div>
+                            <div class="form-group">
+                                  <label for="SelectID">Select</label>
+                                  <select class="form-control" id="SelectID" name="select">
+                                      <option value="General Question">General Question</option>
+                                  </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" name="button">Post</button>
+                        </form>
+                    </div>
+              </div>
+                <div class="panel panel-default">
+              		<div class="panel-heading">
+                        <h4>Engagement</h4>
+                    </div>
+                    <div class="panel-body">
+                    	<div class="row">
+                    		<div class="col-xs-4">
+                    			<img class="img-circle img-hover" src="http://placehold.it/80x80/888/ddd" alt="80x80">
+                    		</div>
+                    		<div class="col-xs-4">
+                    			<img class="img-circle" src="http://placehold.it/80x80/ddd/888" alt="80x80">
+                    		</div>
+                    		<div class="col-xs-4">
+                    			<img class="img-circle" src="http://placehold.it/80x80/ddd/555" alt="80x80">
+                    		</div>
+                    	</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    	<footer class="text-center">
+    	This Bootstrap 3 dashboard layout is compliments of <a href="http://getbootstrap.com" target="_blank">Bootply.com</a>
+		</footer>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

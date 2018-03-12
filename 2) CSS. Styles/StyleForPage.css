@@ -1,0 +1,123 @@
+body {
+	background-color: #cadded;
+	margin: auto;
+	margin-top: 10px;
+	width: 1000px;
+	height:100%;
+}
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+} 
+.menu{
+	float: left;
+	width: 200px;
+}
+.main{
+	margin-left: 215px; /* Отступ слева */
+}
+.head { /* Верхний блок */
+    padding: 40px; /* Поля вокруг */
+   }
+*{
+	font-family: sans-serif;
+	color: #555
+}
+.menuList li{
+	list-style-type: none;
+	font: 16px/2 sans-serif; 
+	border-bottom: 1px solid #9CF;
+	margin-left: -35px;
+}
+
+.menuList li a{
+	padding-left: 5px;
+	display: block;
+}
+.menuList li a:hover{
+	color: #fff;
+	background: #9CF;
+}
+
+.hr {
+	float: right;
+	margin-top: -10px;
+	margin-right: 0px;
+}
+.hr li{
+	display: inline; /* Отображать как строчный элемент */
+    margin-left: 30px; /* Отступ слева */
+   	font-weight: bold;
+   	font-size: 11pt;
+}
+
+.hr li a:hover{
+	color: #e69ce6;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center
+}
+td, th {
+	border: 1px solid #07C
+}
+th {
+	background: #5AE
+}
+
+a[href^="https://"]{
+	color: #e69ce6
+}
+
+a[href^="https://www.microsoft.com"]{
+	font-weight: bold
+}
+.browsers{
+	font-style: italic;
+}
+.browsers li {
+	color: red;
+}
+.browsers li:nth-child(2) {
+	color: green;
+}
+.browsers li:last-child{
+	color: gray;
+}
+.browsers ul li:first-child
+{
+	color: blue;
+	text-decoration: underline;
+}
+.browsers ul li:nth-child(2)
+{
+	color: purple;
+	text-decoration: underline;
+	font-style: normal;
+}
+.browsers ul li:last-child
+{
+	color: yellow;
+	font-style: normal;
+}
+
+.footer *{
+	display: inline-block;
+}
+.down{
+	margin-left: -35px;
+	font-weight: bold;
+}
+.down li+li:before {
+    content: "| "; /* Добавляем перед элементом списка символ в юникоде */
+   }
+.down li a:hover{
+	color: #e69ce6;
+}
+.copyright{
+	float: right;
+}
+.content {
+  min-height: calc(100vh - 90px);
+}

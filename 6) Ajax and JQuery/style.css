@@ -1,0 +1,39 @@
+body {
+    background-color: #cadae6;
+    font-family: sans-serif;
+}
+
+.content {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#quantityHeroes {
+    float: right;
+    margin: 0;
+}
+
+tr th {
+    width: 85%;
+    text-align: left;
+}
+
+table {
+    margin: 10px 0px;
+    border-spacing: 0px 5px;
+}
+
+.next {
+    float: right;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    color: #0077b5;
+    cursor: pointer
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+}

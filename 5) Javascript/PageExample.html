@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestPage. Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+      <h1>JS Basics</h1>
+      <div id="countNumber">
+          <h3>Count Neumbers</h3>
+          <input type="text" id="IDtext" placeholder="Enter phrase" name="phrase" size="79%">
+          <button onclick="CalculatePhrase()">Count</button>
+      </div>
+      <div id="delRepeated">
+        <h3>Delete Repeated</h3>
+        <textarea id="textForEdit" name="text" rows=6 style="resize: vertical" placeholder="Enter phrase" cols="100%"></textarea>
+        <button id="btnDelete" onclick="DeleteRepeatedSymbols()">Delete</button>
+      </div>
+      <div id="IDdate" action="#">
+        <h3>Count Numbers</h3>
+        <input type="text" placeholder="Year">
+        <select id="month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <input type="text" placeholder="Day">
+        <input type="text" placeholder="Hour">
+        <input type="text" placeholder="Minute">
+        <input type="text" placeholder="Second">
+        <input type="text" id="mask" placeholder="Enter mask" name="phrase" size="79%">
+        <button onclick="formatDate()">Replace</button>
+      </div>
+      <button onclick="changeLanguage()" id="btnLang">English</button>
+      <script src="js/Task01.js"></script>
+      <script src="js/Task02.js"></script>
+      <script src="js/Task03.js"></script>
+  </body>
+</html>
